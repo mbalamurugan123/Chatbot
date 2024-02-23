@@ -1,0 +1,812 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+   "responses": ["Hello! nice to see you ", "Good to see you again", "Hi there, how can I help?"],
+   "context": [""]
+  },
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+   "responses": ["Good bye!", "Have a nice day", "Bye! Come back again soon."],
+   "context": [""]
+  },
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure"],
+   "context": [""]
+  },
+  {"tag": "noanswer",
+   "patterns": [],
+   "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+   "context": [""]
+  },
+  {
+    "tag":"name",
+    "patterns":["my name","name"],
+    "responses":["Your name is Balamurugan"]
+  },
+  {
+    "tag":"day",
+    "patterns":["how was the day"],
+    "responses":["Today is a great day"]
+  },
+  {
+    "tag":"soul",
+    "patterns":["do you have soul"],
+    "responses":["No ,I don't have soul,I am a chatbot created by Balamurugan"]
+  },
+  {
+    "tag":"fine",
+    "patterns":["how are you","what are you doing"],
+    "responses":["I am doing fine, and you?"]
+  },
+  {
+    "tag": "l",
+   "patterns": ["love you","miss you","propose me"],
+   "responses": ["Love you too","Love you"],
+   "context": [""]
+  },
+  {
+    "tag": "payment",
+    "patterns":["payment problem","payment not completed"],
+    "responses":["try again","not up to me...","details will be forworded to admin"],
+    "context":[""]
+  },
+
+
+
+  {
+    "tag": "intro",
+    "patterns":["hi, how are you doing?"],
+    "responses":["i'm fine. how about yourself?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i'm fine. how about yourself?"],
+    "responses":["i'm pretty good. thanks for asking."],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i'm pretty good. thanks for asking."],
+    "responses":["no problem. so how have you been?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["no problem. so how have you been?"],
+    "responses":["i've been great. what about you?"],
+    "context":[""]
+  },{
+    "tag": "intro",
+    "patterns":["i've been great. what about you?"],
+    "responses":["what school do you go to?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["what school do you go to?"],
+    "responses":["i go to pcc."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i go to pcc."],
+    "responses":["do you like it there?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["do you like it there?"],
+    "responses":["it's okay. it's a really big campus."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["it's okay. it's a really big campus."],
+    "responses":["good luck with school."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["good luck with school."],
+    "responses":["thank you very much."],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["how's it going?"],
+    "responses":["i'm doing well. how about you?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i'm doing well. how about you?"],
+    "responses":["never better, thanks."],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["never better, thanks."],
+    "responses":["so how have you been lately?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["so how have you been lately?"],
+    "responses":["i've actually been pretty good. you?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i've actually been pretty good. you?"],
+    "responses":["i'm actually in school right now."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i'm actually in school right now."],
+    "responses":["which school do you attend?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["which school do you attend?"],
+    "responses":["i'm attending pcc right now."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i'm attending pcc right now."],
+    "responses":["are you enjoying it there?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["are you enjoying it there?"],
+    "responses":["it's not bad. there are a lot of people there."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["it's not bad. there are a lot of people there."],
+    "responses":["good luck with that."],
+    "context":[""]
+  },
+  {
+    "tag": "thanks",
+    "patterns":["good luck with that."],
+    "responses":["thanks."],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["how are you doing today?"],
+    "responses":["i'm doing great. what about you?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i'm doing great. what about you?"],
+    "responses":["i'm absolutely lovely, thank you."],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i'm absolutely lovely, thank you."],
+    "responses":["everything's been good with you?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["everything's been good with you?"],
+    "responses":["i haven't been better. how about yourself?"],
+    "context":[""]
+  },
+  {
+    "tag": "intro",
+    "patterns":["i haven't been better. how about yourself?"],
+    "responses":["i started school recently."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i started school recently."],
+    "responses":["where are you going to school?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["where are you going to school?"],
+    "responses":["i'm going to pcc."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i'm going to pcc."],
+    "responses":["how do you like it so far?"],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["how do you like it so far?"],
+    "responses":["i like it so far. my classes are pretty good right now."],
+    "context":[""]
+  },
+  {
+    "tag": "school",
+    "patterns":["i like it so far. my classes are pretty good right now."],
+    "responses":["i wish you luck."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it's an ugly day today."],
+    "responses":["i know. i think it may rain."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know. i think it may rain."],
+    "responses":["it's the middle of summer, it shouldn't rain today."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it's the middle of summer, it shouldn't rain today."],
+    "responses":["that would be weird."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that would be weird."],
+    "responses":["yeah, especially since it's ninety degrees outside."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yeah, especially since it's ninety degrees outside."],
+    "responses":["i know, it would be horrible if it rained and it was hot outside."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know, it would be horrible if it rained and it was hot outside."],
+    "responses":["yes, it would be. "],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yes, it would be."],
+    "responses":["i really wish it wasn't so hot every day."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really wish it wasn't so hot every day."],
+    "responses":["me too. i can't wait until winter."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["me too. i can't wait until winter."],
+    "responses":["i like winter too, but sometimes it gets too cold."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i like winter too, but sometimes it gets too cold."],
+    "responses":["i'd rather be cold than hot."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i'd rather be cold than hot."],
+    "responses":["me too."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it doesn't look very nice outside today."],
+    "responses":["you're right. i think it's going to rain later."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["you're right. i think it's going to rain later."],
+    "responses":["in the middle of the summer, it shouldn't be raining."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["in the middle of the summer, it shouldn't be raining."],
+    "responses":["that wouldn't seem right."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that wouldn't seem right."],
+    "responses":["considering that it's over ninety degrees outside, that would be weird."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["considering that it's over ninety degrees outside, that would be weird."],
+    "responses":["exactly, it wouldn't be nice if it started raining. it's too hot."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["exactly, it wouldn't be nice if it started raining. it's too hot."],
+    "responses":["i know, you're absolutely right."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know, you're absolutely right."],
+    "responses":["i wish it would cool off one day."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i wish it would cool off one day."],
+    "responses":["that's how i feel, i want winter to come soon."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that's how i feel, i want winter to come soon."],
+    "responses":["i enjoy the winter, but it gets really cold sometimes."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i enjoy the winter, but it gets really cold sometimes."],
+    "responses":["i know what you mean, but i'd rather be cold than hot."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know what you mean, but i'd rather be cold than hot."],
+    "responses":["that's exactly how i feel."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i wish it was a nicer day today."],
+    "responses":["that is true. i hope it doesn't rain."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that is true. i hope it doesn't rain."],
+    "responses":["it wouldn't rain in the middle of the summer."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it wouldn't rain in the middle of the summer."],
+    "responses":["it wouldn't seem right if it started raining right now."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it wouldn't seem right if it started raining right now."],
+    "responses":["it would be weird if it started raining in ninety degree weather."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it would be weird if it started raining in ninety degree weather."],
+    "responses":["any rain right now would be pointless."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["any rain right now would be pointless."],
+    "responses":["that's right, it really would be."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that's right, it really would be."],
+    "responses":["i want it to cool down some."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i want it to cool down some."],
+    "responses":["i know what you mean, i can't wait until it's winter."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know what you mean, i can't wait until it's winter."],
+    "responses":["winter is great. i wish it didn't get so cold sometimes though."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["winter is great. i wish it didn't get so cold sometimes though."],
+    "responses":["i would rather deal with the winter than the summer."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it's such a nice day."],
+    "responses":["yes, it is."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yes, it is."],
+    "responses":["it looks like it may rain soon."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it looks like it may rain soon."],
+    "responses":["yes, and i hope that it does."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yes, and i hope that it does."],
+    "responses":["why is that?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["why is that?"],
+    "responses":["i really love how rain clears the air."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really love how rain clears the air."],
+    "responses":["me too. it always smells so fresh after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["me too. it always smells so fresh after it rains."],
+    "responses":["yes, but i love the night air after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yes, but i love the night air after it rains."],
+    "responses":["really? why is it?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["really? why is it?"],
+    "responses":["because you can see the stars perfectly."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["because you can see the stars perfectly."],
+    "responses":["i really hope it rains today."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really hope it rains today."],
+    "responses":["yeah, me too."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["isn't it a nice day?"],
+    "responses":["it really is."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it really is."],
+    "responses":["it seems that it may rain today."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it seems that it may rain today."],
+    "responses":["hopefully it will."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["hopefully it will."],
+    "responses":["how come?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["how come?"],
+    "responses":["i like how clear the sky gets after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i like how clear the sky gets after it rains."],
+    "responses":["i feel the same way. it smells so good after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i feel the same way. it smells so good after it rains."],
+    "responses":["i especially love the night air when it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i especially love the night air when it rains."],
+    "responses":["really? why?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["really? why?"],
+    "responses":["the stars look so much closer after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["the stars look so much closer after it rains."],
+    "responses":["i really want it to rain today."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really want it to rain today."],
+    "responses":["yeah, so do i."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["don't you think it's nice out?"],
+    "responses":["yes, i think so too."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["yes, i think so too."],
+    "responses":["i think that it's going to rain."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i think that it's going to rain."],
+    "responses":["i hope that it does rain."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i hope that it does rain."],
+    "responses":["you like the rain?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["you like the rain?"],
+    "responses":["the sky looks so clean after it rains. i love it."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["the sky looks so clean after it rains. i love it."],
+    "responses":["i understand. rain does make it smell cleaner."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i understand. rain does make it smell cleaner."],
+    "responses":["i love most how it is at night after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i love most how it is at night after it rains."],
+    "responses":["how come?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["how come?"],
+    "responses":["you can see the stars so much more clearly after it rains."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["you can see the stars so much more clearly after it rains."],
+    "responses":["i would love for it to rain today."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really want to go to the beach this weekend."],
+    "responses":["that sounds like fun. what's the weather going to be like?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that sounds like fun. what's the weather going to be like?"],
+    "responses":["i heard that it's going to be warm this weekend."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i heard that it's going to be warm this weekend."],
+    "responses":["i believe so."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i believe so."],
+    "responses":["good. i hope it doesn't cool off this weekend."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["good. i hope it doesn't cool off this weekend."],
+    "responses":["i know. i really want to go to the beach."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know. i really want to go to the beach."],
+    "responses":["but you know that california weather is really unpredictable."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["but you know that california weather is really unpredictable."],
+    "responses":["you're right. one minute it's hot, and then the next minute it's cold."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["you're right. one minute it's hot, and then the next minute it's cold."],
+    "responses":["i really wish the weather would just stay the same."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really wish the weather would just stay the same."],
+    "responses":["i do too. that way we can have our activities planned ahead of time."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i do too. that way we can have our activities planned ahead of time."],
+    "responses":["yeah, that would make things a lot easier."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i would like to take a trip to the beach this weekend."],
+    "responses":["a trip to the beach would be fun. how is the weather going to be?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["a trip to the beach would be fun. how is the weather going to be?"],
+    "responses":["the forecast says that it will be warm on the weekend."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["the forecast says that it will be warm on the weekend."],
+    "responses":["so do you think it'll be perfect weather for the beach?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["so do you think it'll be perfect weather for the beach?"],
+    "responses":["it sounds like it will be."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it sounds like it will be."],
+    "responses":["i really hope it doesn't get cold."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i really hope it doesn't get cold."],
+    "responses":["that would ruin things, i want to go so badly."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that would ruin things, i want to go so badly."],
+    "responses":["the weather in california is unpredictable, so you never know."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["the weather in california is unpredictable, so you never know."],
+    "responses":["that is true. the weather is constantly changing."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that is true. the weather is constantly changing."],
+    "responses":["it would be nice if the weather would never change."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it would be nice if the weather would never change."],
+    "responses":["that would be great, then we could plan things sooner."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["that would be great, then we could plan things sooner."],
+    "responses":["true. predictable weather would make life easier."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it would be nice to go to the beach sometime this weekend."],
+    "responses":["what's the weather going to be like? i may want to go too."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["what's the weather going to be like? i may want to go too."],
+    "responses":["the weather this weekend is supposed to be warm."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["the weather this weekend is supposed to be warm."],
+    "responses":["will it be good beach weather?"],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["will it be good beach weather?"],
+    "responses":["i think it will be."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i think it will be."],
+    "responses":["it wouldn't be good if it got cold this weekend."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["it wouldn't be good if it got cold this weekend."],
+    "responses":["i want this trip to be perfect, i hope it stays warm."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i want this trip to be perfect, i hope it stays warm."],
+    "responses":["this california weather is so uncertain, it's impossible to know what'll happen."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["this california weather is so uncertain, it's impossible to know what'll happen."],
+    "responses":["i know. every day the weather seems different."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i know. every day the weather seems different."],
+    "responses":["i would love it if it wasn't always so unpredictable."],
+    "context":[""]
+  },
+  {
+    "tag": "weather",
+    "patterns":["i would love it if it wasn't always so unpredictable."],
+    "responses":["that would make it easier for us to make plans."],
+    "context":[""]
+  }
+]}
